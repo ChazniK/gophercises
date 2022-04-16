@@ -1,6 +1,7 @@
 package main
 
 import (
+	"quiz/process"
 	"quiz/read"
 )
 
@@ -12,5 +13,8 @@ func main() {
 		return
 	}
 
-	println(input)
+	questionsAndAnswers := process.ProccessFile(input)
+
+	for i := 0; i < len(questionsAndAnswers); i++ {
+	}
 }
